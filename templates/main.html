@@ -4,6 +4,22 @@
         <title>Poker hands</title>
         <link rel="stylesheet" type="text/css" href="https://private-storage-inc.s3.amazonaws.com/css/normalize.css">
         <link rel="stylesheet" type="text/css" href="https://private-storage-inc.s3.amazonaws.com/css/skeleton.css">
+        <style type="text/css">
+            .card{
+                width: 50px;
+                height: 73px;
+                border: 1px solid black;
+                border-radius: 3px;
+                float: left;
+                margin-right: 5px;
+            }
+            .card img{
+                width: 100%;
+            }
+            #hand1 {
+                clear: both;
+            }
+        </style>
     </head>
     <body>
         <div class="container">
@@ -11,6 +27,7 @@
             {% endblock %}
         </div>
         {% load static %}
+        <script type="text/javascript" src="https://private-storage-inc.s3.amazonaws.com/js/jquery-3.2.1.min.js"></script>
         <script type="text/javascript" src="{% static "main.js" %}"></script>
     </body>
 </html>

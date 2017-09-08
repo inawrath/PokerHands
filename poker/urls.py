@@ -14,7 +14,9 @@ Including another URLconf
     2. Add a URL to urlpatterns:  url(r'^blog/', include('blog.urls'))
 """
 from django.conf.urls import include, url
-
+from deck import views
 urlpatterns = [
-    url(r'^$', include('deck.urls')),
+    url(r'^$', views.index, name='index'),
+    url(r'^new$', views.new, name='new'),
+    url(r'^newHand$', views.newHand, name='newHand'),
 ]
