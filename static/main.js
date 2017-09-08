@@ -30,7 +30,7 @@ $(document).ready(function() {
             if (data.end) {
                 $('#new_game').show();
                 $('#result p').html('<span></span>');
-                $('#result p span').text('Game Over');
+                $('#result p span').text('Deck has flipped');
             }
         }
     }
