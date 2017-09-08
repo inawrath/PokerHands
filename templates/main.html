@@ -1,10 +1,16 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <title>Poker hands</title>
-</head>
-<body>
-{% block 'body' %}
-{% endblock %}
-</body>
+    <head>
+        <title>Poker hands</title>
+        <link rel="stylesheet" type="text/css" href="https://private-storage-inc.s3.amazonaws.com/css/normalize.css">
+        <link rel="stylesheet" type="text/css" href="https://private-storage-inc.s3.amazonaws.com/css/skeleton.css">
+    </head>
+    <body>
+        <div class="container">
+            {% block 'body' %}
+            {% endblock %}
+        </div>
+        {% load static %}
+        <script type="text/javascript" src="{% static "main.js" %}"></script>
+    </body>
 </html>
